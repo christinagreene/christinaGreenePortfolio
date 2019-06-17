@@ -1,0 +1,23 @@
+html {
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+}
+
+body {
+   // font-family: $baseFont;
+   font-size: 1.8rem;
+}
+
+.wrapper {
+   max-width: 3840px;
+   width: 80%;
+   margin: 0 auto;
+}
+
+img {
+   max-width: 100%;
+   width: 100%;
+   display: block;
+   object-fit: cover;
+   overflow: hidden;
+}

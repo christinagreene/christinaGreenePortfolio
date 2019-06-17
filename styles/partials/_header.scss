@@ -1,0 +1,23 @@
+header {
+   background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('../../assets/leavesBackground.jpg');
+   background-size: cover;
+   height: 100vh;
+   display: flex;
+   flex-direction: row;
+   .navSidebar {
+      width: 10%;
+   }
+   .mainTitle {
+      width: 90%;
+      text-align: center;
+      margin: 0;
+      h1 {
+      font-family: $mainHeadingFont;
+      font-size: 15rem;
+      text-transform: lowercase;
+      }
+      span {
+         display: block;
+      }
+   }   
+}

@@ -1,0 +1,21 @@
+// Base Fonts //////////////////
+$baseFont: 'Raleway', sans-serif;
+$headingFont: 'Abril Fatface', cursive;
+$mainHeadingFont: "Raph Lanok Future", 'Euphoria Script', cursive;
+
+// Custom Font Import for Header
+@font-face {
+   font-family: "Raph Lanok Future";
+   src: url('../../assets/raphLanokFutureFont/RaphLanokFuture.eot?') format("eot"),
+   url('../../assets/raphLanokFutureFont/RaphLanokFuture.woff') format("woff"),
+   url('../../assets/raphLanokFutureFont/RaphLanokFuture.ttf') format("truetype"),
+   url('../../assets/raphLanokFutureFont/RaphLanokFuture.svg#RaphLanokFuture') format("svg");
+   font-weight:normal;font-style:normal;
+}
+
+// Base Colours ///////////////
+$primaryColour: #93A195;
+$secondaryColour: #59675E;
+$accentColour: #662738;
+$white: #F9F5F5;
+$black: #001918;
