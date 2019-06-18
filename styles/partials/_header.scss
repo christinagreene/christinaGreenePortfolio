@@ -23,7 +23,7 @@ header {
       font-size: 21rem;
       text-transform: lowercase;
       line-height: 1;
-      margin: 4% 0;
+      margin: 7% 0 2% 0;
       }
       span {
          display: block;
@@ -38,7 +38,7 @@ header {
    .arrow {
       position: absolute;
       bottom: 5%;
-      left: 50%;
+      left: 55%;
       transform: translate (-50%, -50%);
       span {
          display: block;
@@ -48,6 +48,9 @@ header {
          border-right: 2px solid $secondaryColour;
          transform: rotate(45deg);
          animation: animate 3s infinite;
+         &:hover {
+            animation: none;
+         }
       }
    }   
 }
@@ -217,9 +220,3 @@ header {
       }
    }
 }
-
-
-
-
-
-//////////// Concept for hamburger menu from https://codepen.io/designcouch/pen/Atyop

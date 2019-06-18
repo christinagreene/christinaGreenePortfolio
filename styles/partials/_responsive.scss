@@ -1,0 +1,28 @@
+// Landscape phone to portrait tablet
+@media (max-width: 768px) {
+   header {
+      height: auto;
+      .mainTitle {
+         h1 {
+            font-size:  20vw;
+            margin-top: 30%;
+         }
+         h2 {
+            font-size: 3.9vw;
+         }
+      }
+   }
+
+   .projectContainer {
+      padding-bottom: 8%;
+   }
+
+}
+// Landscape phones and down
+@media (max-width: 480px) {
+
+}
+// Smallest screen sizes (smallest = 320px)
+@media (max-width: 360px) {
+
+}

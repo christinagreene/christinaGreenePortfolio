@@ -15,4 +15,7 @@ $(document).ready(function () {
          element.style.left = "0px";
       }
    });
+
+
+      AOS.init();
 });

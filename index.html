@@ -10,6 +10,7 @@
    <script src="https://kit.fontawesome.com/eae878ee07.js"></script>   
    <link rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Euphoria+Script|Raleway:400,700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -45,23 +46,23 @@
             </ul>
             <ul class="hamburgerMenuSocial">
                <li>
-                  <a href="https://twitter.com/codingchristina" aria-label="Visit Christina Greene's Twitter Page."><i
+                  <a href="https://twitter.com/codingchristina" aria-label="Visit Christina Greene's Twitter Page." target="_blank"><i
                         class="fab fa-twitter"></i></a>
                </li>
                <li>
-                  <a href="https://medium.com/@christinagreene5" aria-label="Visit Christina Greene's Medium Page."><i
+                  <a href="https://medium.com/@christinagreene5" aria-label="Visit Christina Greene's Medium Page." target="_blank"><i
                         class="fab fa-medium-m"></i></a>
                </li>
                <li>
-                  <a href="https://github.com/christinagreene5" aria-label="Visit Christina Greene's GitHub Page."><i
+                  <a href="https://github.com/christinagreene5" aria-label="Visit Christina Greene's GitHub Page." target="_blank"><i
                         class="fab fa-github"></i></a>
                </li>
                <li>
-                  <a href="www.linkedin.com/in/christinagreene5" aria-label="Visit Christina Greene's LinkedIn Page."><i
+                  <a href="www.linkedin.com/in/christinagreene5" aria-label="Visit Christina Greene's LinkedIn Page." target="_blank"><i
                         class="fab fa-linkedin-in"></i></a>
                </li>
                <li>
-                  <a href="mailto:christina.greene@rogers.com" aria-label="Send Christina Greene an email."><i
+                  <a href="mailto:christina.greene@rogers.com" aria-label="Send Christina Greene an email." target="_blank"><i
                         class="fas fa-paper-plane"></i></a>
                </li>
             </ul>
@@ -69,19 +70,19 @@
          <nav class="sidebarSocial">
             <ul>
                <li>
-                  <a href="https://twitter.com/codingchristina" aria-label="Visit Christina Greene's Twitter Page."><i class="fab fa-twitter"></i></a>
+                  <a href="https://twitter.com/codingchristina" aria-label="Visit Christina Greene's Twitter Page." target="_blank"><i class="fab fa-twitter"></i></a>
                </li>
                <li>
-                  <a href="https://medium.com/@christinagreene5" aria-label="Visit Christina Greene's Medium Page."><i class="fab fa-medium-m"></i></a>
+                  <a href="https://medium.com/@christinagreene5" aria-label="Visit Christina Greene's Medium Page." target="_blank"><i class="fab fa-medium-m"></i></a>
                </li>
                <li>
-                  <a href="https://github.com/christinagreene5" aria-label="Visit Christina Greene's GitHub Page."><i class="fab fa-github"></i></a>
+                  <a href="https://github.com/christinagreene5" aria-label="Visit Christina Greene's GitHub Page." target="_blank"><i class="fab fa-github"></i></a>
                </li>
                <li>
-                  <a href="www.linkedin.com/in/christinagreene5" aria-label="Visit Christina Greene's LinkedIn Page."><i class="fab fa-linkedin-in"></i></a>
+                  <a href="www.linkedin.com/in/christinagreene5" aria-label="Visit Christina Greene's LinkedIn Page." target="_blank"><i class="fab fa-linkedin-in"></i></a>
                </li>
                <li>
-                  <a href="mailto:christina.greene@rogers.com" aria-label="Send Christina Greene an email."><i class="fas fa-paper-plane"></i></a>
+                  <a href="mailto:christina.greene@rogers.com" aria-label="Send Christina Greene an email." target="_blank"><i class="fas fa-paper-plane"></i></a>
                </li>
             </ul>
          </nav>
@@ -91,8 +92,10 @@
          <h2>Web Developer</h2>
          <!-- Arrow to indicate more content below -->
          <div class="arrow">
-            <span></span>
-            <span></span>
+            <a href="#about">
+               <span></span>
+               <span></span>
+            </a>
          </div>
       </div>
    </header>
@@ -102,12 +105,13 @@
       <div class="about" id="about">
          <h2>Who am I?</h2>
          <div class="aboutContainer wrapper">
-            <div class="headshotContainer">
+            <div class="headshotContainer" data-aos="zoom-in">
                <img src="./assets/headshotCropped.png" alt="A headshot of Christina Greene.">
             </div>
             <div class="aboutDescription">
-               <p>Hi, I'm Christina! I'm a front-end developer with excellent interpersonal, leadership, and management skills. I'm goal-oriented, highly motivated and a hard-working team player. I have a passion for creativity and truly enjoy the art of creating a website from scratch. I take pride in my strong organizational and prioritization skills, as I am able to handle a large volume of work accurately, efficiently and professionally under pressure to meet deadlines. I am a quick learner and am always up for trying something new!</p>
-               <p>When I'm not working on some code, you can find me baking gluten-free treats, burning up at sweat at hot yoga or playing softball.</p>
+               <p>Hi, I'm Christina! I'm a front-end developer with excellent interpersonal, leadership, and management skills. I'm goal-oriented, highly motivated and a hard working team player.  I take pride in my strong organizational and prioritization skills, as I am able to handle a large volume of work accurately, efficiently and professionally under pressure to meet deadlines. I am a quick learner and am always up for trying something new!</p>
+               <p>I have a passion for creativity and truly enjoy the art of creating and designing a website from scratch. I am excited to join a collaborative team that challenges me to step outside of my comfort zone.</p>
+               <p>When I'm not working on some code, you can find me baking gluten-free treats, burning up a sweat at hot yoga or playing softball.</p>
             </div>
          </div>
       </div>
@@ -115,7 +119,7 @@
       <div class="projects" id="projects">
          <h2>What I've been working on</h2>
          <div class="projectContainer wrapper">
-            <div class="projectOne">
+            <div class="projectOne" data-aos="fade-up-right">
                <h3>Arora Jewelers</h3>
                <h4>HTML & CSS PSD Conversion</h4>
                <div class="imageContainer">
@@ -124,7 +128,7 @@
                   </a>
                </div>
             </div>
-            <div class="projectTwo">
+            <div class="projectTwo" data-aos="fade-up-left">
                <h3>TamaraShevon.com</h3>
                <h4>Multi-Page Website</h4>
                <div class="imageContainer">
@@ -133,7 +137,7 @@
                   </a>
                </div>
             </div>
-            <div class="projectThree">
+            <div class="projectThree" data-aos="fade-up-right">
                <h3>Know Your Show!</h3>
                <h4>React, JavaScript & API Application</h4>
                <div class="imageContainer">
@@ -142,7 +146,7 @@
                   </a>
                </div>
             </div>
-            <div class="projectFour">
+            <div class="projectFour" data-aos="fade-up-left">
                <h3>Dinner After Show</h3>
                <h4>React, JavaScript, Firebase & API Application // Group Project</h4>
                <div class="imageContainer">
@@ -158,62 +162,62 @@
          <h2>My Strengths</h2>
          <div class="skillsContainer wrapper">
             <div class="htmlIcon icon">
+               <i class="devicon-html5-plain" aria-hidden="true"></i>
                <div class="iconOverlay">
-                  <i class="devicon-html5-plain" aria-hidden="true"></i>
                   <p>HTML5</p>
                </div>
             </div>
             <div class="cssIcon icon">
+               <i class="devicon-css3-plain" aria-hidden="true"></i>
                <div class="iconOverlay">
-                  <i class="devicon-css3-plain" aria-hidden="true"></i>
                   <p>CSS3</p>
                </div>
             </div>
             <div class="jsIcon icon">
+               <i class="devicon-javascript-plain" aria-hidden="true"></i>
                <div class="iconOverlay">
-                  <i class="devicon-javascript-plain" aria-hidden="true"></i>
                   <p>JavaScript</p>
                </div>
             </div>
             <div class="jQueryIcon icon">
+               <i class="devicon-jquery-plain" aria-hidden="true"></i>
                <div class="iconOverlay">
-                  <i class="devicon-jquery-plain" aria-hidden="true"></i>
                   <p>jQuery</p>
                </div>
             </div>
             <div class="reactIcon icon">
+               <i class="devicon-react-original" aria-hidden="true"></i>
                <div class="iconOverlay">
-                  <i class="devicon-react-original" aria-hidden="true"></i>
                   <p>React</p>
                </div>
             </div>
             <div class="sassIcon icon">
+               <i class="devicon-sass-original" aria-hidden="true"></i>
                <div class="iconOverlay">
-                  <i class="devicon-sass-original" aria-hidden="true"></i>
                   <p>SASS</p>
                </div>
             </div>
             <div class="gitIcon icon">
+               <i class="devicon-git-plain" aria-hidden="true"></i>
                <div class="iconOverlay">
-                  <i class="devicon-git-plain" aria-hidden="true"></i>
-                  <p>git</p>
+                  <p>Git</p>
                </div>
             </div>
             <div class="githubIcon icon">
+               <i class="devicon-github-plain" aria-hidden="true"></i>
                <div class="iconOverlay">
-                  <i class="devicon-github-plain" aria-hidden="true"></i>
                   <p>GitHub</p>
                </div>
             </div>
             <div class="vsCodeIcon icon">
+               <i class="devicon-visualstudio-plain" aria-hidden="true"></i>
                <div class="iconOverlay">
-                  <i class="devicon-visualstudio-plain" aria-hidden="true"></i>
                   <p>VS Code</p>
                </div>
             </div>
             <div class="terminalIcon icon">
+               <i class="fas fa-terminal" aria-hidden="true"></i>
                <div class="iconOverlay">
-                  <i class="fas fa-terminal" aria-hidden="true"></i>
                   <p>Terminal</p>
                </div>
             </div>
@@ -222,7 +226,7 @@
       <!-- Blog Section -->
       <div class="blogPosts" id="blog">
          <h2>My Blog Posts</h2>
-         <div class="blogContainer wrapper">
+         <div class="blogContainer wrapper" data-aos="fade-right">
             <div class="post post1">
                <a href="https://medium.com/p/creating-a-progress-bar-in-react-181501bc22f1?source=email-ad0ed1633560--writer.postDistributed&sk=01c1e2573661f9219889d75fcfba2958" target="_blank">
                   <img src="./assets/blogPost3.png" alt="A screen shot of Christina's third blog post.">
@@ -273,10 +277,10 @@
                   <nav class="contactSocialNav">
                      <ul>
                         <li>
-                           <a href="https://twitter.com/codingchristina" aria-label="Visit Christina Greene's Twitter Page."><i class="fab fa-twitter"></i></a>
+                           <a href="https://twitter.com/codingchristina" aria-label="Visit Christina Greene's Twitter Page." target="_blank"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li>
-                           <a href="www.linkedin.com/in/christinagreene5" aria-label="Visit Christina Greene's LinkedIn Page."><i class="fab fa-linkedin-in"></i></a>
+                           <a href="www.linkedin.com/in/christinagreene5" aria-label="Visit Christina Greene's LinkedIn Page." target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         </li>
                      </ul>
                   </nav>
@@ -290,6 +294,7 @@
    </footer>
 
    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -8,11 +8,10 @@
    .projectThree,
    .projectFour {
       width: 50%;
-      padding: 3% 0;
-      .imageContainer {
-         border: 2px solid $accentColour;
-         box-shadow: 0 0 5px $accentColour;
-      }
+      // padding: 3% 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
    }
    .projectOne,
    .projectThree {

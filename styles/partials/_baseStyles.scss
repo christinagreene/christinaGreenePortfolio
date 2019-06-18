@@ -7,6 +7,7 @@ body {
    font-family: $baseFont;
    font-size: 2rem;
    color: $black;
+   overflow-x: hidden;
 }
 
 .wrapper {
@@ -48,8 +49,6 @@ h4 {
    padding-bottom: 20px;
 }
 
-
-
 .about,
 .skills,
 .contact {
@@ -59,6 +58,22 @@ h4 {
 .projects,
 .blog {
    background: $white;
+}
+
+.imageContainer,
+.post img {
+   border: 2px solid $accentColour;
+   box-shadow: 0 0 7px $accentColour;
+   transition: .3s ease-in-out;
+   &:hover {
+      transform: scale(1.1);
+   }
+   &:active {
+      box-shadow: 0 0 10px $accentColour;
+   }
+   &:focus {
+      border: 1px dotted $black;
+   }
 }
 
 footer {
