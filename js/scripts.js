@@ -9,7 +9,7 @@ $(document).ready(function () {
       left = style.getPropertyValue('left');
 
       if (left == "0px"){
-         element.style.left = "-320px";
+         element.style.left = "-240px";
       }
       else {
          element.style.left = "0px";

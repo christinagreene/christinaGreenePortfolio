@@ -4,8 +4,9 @@ html {
 }
 
 body {
-   // font-family: $baseFont;
+   font-family: $baseFont;
    font-size: 1.8rem;
+   color: $black;
 }
 
 .wrapper {
@@ -20,4 +21,8 @@ img {
    display: block;
    object-fit: cover;
    overflow: hidden;
+}
+
+h2 {
+   font-family: $headingFont;
 }
