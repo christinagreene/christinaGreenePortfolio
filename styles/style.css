@@ -193,7 +193,7 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #001918;
 }
 
@@ -212,8 +212,51 @@ img {
   overflow: hidden;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  text-align: center;
+}
+
 h2 {
   font-family: "Abril Fatface", cursive;
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding: 3% 0;
+}
+
+h3 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-size: 2.3rem;
+  padding-bottom: 20px;
+}
+
+.about,
+.skills,
+.contact {
+  background: #93A195;
+}
+
+.projects,
+.blog {
+  background: #F9F5F5;
+}
+
+footer {
+  background: #59675E;
+  color: #93A195;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
 }
 
 header {
@@ -248,7 +291,7 @@ header .navSidebar {
 }
 
 header .mainTitle {
-  width: 93%;
+  width: 89%;
   text-align: center;
   margin: 0;
 }
@@ -267,6 +310,9 @@ header .mainTitle span {
 
 header .mainTitle h2 {
   font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  text-transform: capitalize;
+  padding: 0;
 }
 
 header .arrow {
@@ -356,6 +402,14 @@ header .arrow span {
   transform-origin: left center;
 }
 
+.navIcon span:hover {
+  color: #662738;
+}
+
+.navIcon span:focus {
+  border: 1px dashed #001918;
+}
+
 .navIcon.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -390,7 +444,7 @@ header .arrow span {
 
 .menu ul {
   list-style: none;
-  padding: 20px 0;
+  padding: 10px 0;
   margin: 0;
 }
 
@@ -450,5 +504,203 @@ header .arrow span {
 
 .sidebarSocial ul li a:focus {
   border: 1px dotted #001918;
+}
+
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2% 0 5% 0;
+}
+
+.aboutContainer .headshotContainer {
+  width: 35%;
+  padding-right: 3%;
+}
+
+.aboutContainer .headshotContainer img {
+  border: 2px solid #59675E;
+  -webkit-box-shadow: 0 0 10px #59675E;
+          box-shadow: 0 0 10px #59675E;
+}
+
+.aboutContainer .aboutDescription {
+  width: 65%;
+  padding-left: 2%;
+}
+
+.projectContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 3%;
+}
+
+.projectContainer .projectOne,
+.projectContainer .projectTwo,
+.projectContainer .projectThree,
+.projectContainer .projectFour {
+  width: 50%;
+  padding: 3% 0;
+}
+
+.projectContainer .projectOne .imageContainer,
+.projectContainer .projectTwo .imageContainer,
+.projectContainer .projectThree .imageContainer,
+.projectContainer .projectFour .imageContainer {
+  border: 2px solid #662738;
+  -webkit-box-shadow: 0 0 5px #662738;
+          box-shadow: 0 0 5px #662738;
+}
+
+.projectContainer .projectOne,
+.projectContainer .projectThree {
+  padding-right: 5%;
+}
+
+.projectContainer .projectTwo,
+.projectContainer .projectFour {
+  padding-left: 5%;
+}
+
+.projectContainer .projectThree {
+  padding-top: 60px;
+}
+
+.skillsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  padding: 2% 0 5% 0;
+}
+
+.skillsContainer .icon {
+  width: 20%;
+}
+
+.skillsContainer .icon i {
+  font-size: 5rem;
+}
+
+.blogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 4%;
+}
+
+.blogContainer .post {
+  width: 30%;
+}
+
+.blogContainer .post img {
+  border: 2px solid #662738;
+  -webkit-box-shadow: 0 0 7px #662738;
+          box-shadow: 0 0 7px #662738;
+}
+
+.blogContainer .post h3 {
+  font-size: 2.5rem;
+  padding: 10px;
+}
+
+.blogContainer .post h4 {
+  font-size: 2.1rem;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #662738;
+}
+
+.blogContainer .post p {
+  margin: 0;
+  padding: 15px 0 30px 0;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 5% 0;
+}
+
+.contactContainer .contactParagraph,
+.contactContainer .contactPoints {
+  width: 50%;
+}
+
+.contactContainer p {
+  font-size: 2.3rem;
+}
+
+.contactPoints {
+  text-align: center;
+}
+
+.contactPoints ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contactPoints a {
+  text-decoration: none;
+  color: #001918;
+  padding: 10px;
+}
+
+.contactPoints a:hover {
+  color: #59675E;
+}
+
+.contactPoints a:active {
+  color: #F9F5F5;
+}
+
+.contactPoints a:focus {
+  border: 1px dotted #001918;
+}
+
+.contactPoints h3 {
+  padding: 15px 0;
 }
 /*# sourceMappingURL=style.css.map */

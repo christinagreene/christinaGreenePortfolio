@@ -1,0 +1,28 @@
+.projectContainer {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding-bottom: 3%;
+   .projectOne,
+   .projectTwo,
+   .projectThree,
+   .projectFour {
+      width: 50%;
+      padding: 3% 0;
+      .imageContainer {
+         border: 2px solid $accentColour;
+         box-shadow: 0 0 5px $accentColour;
+      }
+   }
+   .projectOne,
+   .projectThree {
+      padding-right: 5%;
+   }
+   .projectTwo,
+   .projectFour {
+      padding-left: 5%;
+   }
+   .projectThree {
+      padding-top: 60px;
+   }
+}
