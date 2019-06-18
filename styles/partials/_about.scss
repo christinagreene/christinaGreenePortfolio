@@ -12,5 +12,8 @@
    .aboutDescription {
       width: 65%;
       padding-left: 2%;
+      p:first-of-type {
+         margin-top: 0;
+      }
    }
 }

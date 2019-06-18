@@ -13,14 +13,64 @@
       }
    }
 
-   .projectContainer {
-      padding-bottom: 8%;
+   .aboutContainer {
+      flex-direction: column;
+      .headshotContainer {
+         padding: 0;
+         margin: 0 auto;
+      }
+      .aboutDescription {
+         width: 100%;
+         padding: 6% 0;
+      }
    }
 
+   .projectContainer {
+      flex-direction: column;
+      padding-bottom: 8%;
+      .projectOne,
+      .projectTwo,
+      .projectThree,
+      .projectFour {
+         width: 100%;
+         padding: 5% 0;
+      }
+   }
+
+   .skillsContainer {
+      justify-content: center;
+      .icon {
+         width: 25%;
+      }
+   }
+
+   .blogContainer {
+      justify-content: center;
+      .post {
+         width: 100%;
+         padding: 3% 0 6% 0;
+      }
+   }
+
+   .contactContainer {
+      flex-direction: column;
+      .contactParagraph,
+      .contactPoints {
+         width: 100%;
+      }
+      .contactSocial {
+         padding: 7% 0;
+      }
+   }
 }
 // Landscape phones and down
 @media (max-width: 480px) {
-
+   .skillsContainer {
+      justify-content: center;
+      .icon {
+         width: 33%;
+      }
+   }
 }
 // Smallest screen sizes (smallest = 320px)
 @media (max-width: 360px) {

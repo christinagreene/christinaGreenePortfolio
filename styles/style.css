@@ -561,6 +561,10 @@ header .arrow span:hover {
   padding-left: 2%;
 }
 
+.aboutContainer .aboutDescription p:first-of-type {
+  margin-top: 0;
+}
+
 .projectContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -621,7 +625,6 @@ header .arrow span:hover {
 
 .skillsContainer .icon {
   width: 20%;
-  position: relative;
   padding: 20px 0 50px 0;
 }
 
@@ -629,27 +632,8 @@ header .arrow span:hover {
   font-size: 5rem;
 }
 
-.skillsContainer .icon .iconOverlay {
-  position: absolute;
-  top: 5%;
-  right: 20%;
-  bottom: 30%;
-  left: 20%;
-  background: rgba(102, 39, 56, 0.815);
-  color: #F9F5F5;
-  border-radius: 5px;
-  opacity: 0;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-.skillsContainer .icon .iconOverlay:hover {
-  opacity: 1;
-}
-
 .skillsContainer .icon p {
   margin: 0;
-  font-weight: 700;
   -webkit-transform: translate(0, 100%);
           transform: translate(0, 100%);
 }
@@ -768,8 +752,74 @@ header .arrow span:hover {
   header .mainTitle h2 {
     font-size: 3.9vw;
   }
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutContainer .headshotContainer {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .aboutContainer .aboutDescription {
+    width: 100%;
+    padding: 6% 0;
+  }
   .projectContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-bottom: 8%;
+  }
+  .projectContainer .projectOne,
+  .projectContainer .projectTwo,
+  .projectContainer .projectThree,
+  .projectContainer .projectFour {
+    width: 100%;
+    padding: 5% 0;
+  }
+  .skillsContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skillsContainer .icon {
+    width: 25%;
+  }
+  .blogContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blogContainer .post {
+    width: 100%;
+    padding: 3% 0 6% 0;
+  }
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactContainer .contactParagraph,
+  .contactContainer .contactPoints {
+    width: 100%;
+  }
+  .contactContainer .contactSocial {
+    padding: 7% 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillsContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skillsContainer .icon {
+    width: 33%;
   }
 }
 /*# sourceMappingURL=style.css.map */
