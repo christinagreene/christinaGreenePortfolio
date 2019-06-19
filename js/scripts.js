@@ -1,6 +1,7 @@
 $(document).ready(function () {
    //hamburger menu open/close
    $('.navIcon').click(function () {
+
       // toggles class for hamburger menu turning into an X
       $(this).toggleClass('open');
       
@@ -9,11 +10,11 @@ $(document).ready(function () {
       const style = window.getComputedStyle(menu);
       const left = style.getPropertyValue('left');
 
-      if (left == "0px"){
-         menu.style.left = "-240px";
+      if (left == '0px'){
+         menu.style.left = '-240px';
       }
       else {
-         menu.style.left = "0px";
+         menu.style.left = '0px';
       }
 
       // controls the width of the sidebar when the menu is open
@@ -28,6 +29,13 @@ $(document).ready(function () {
          nav.style.width = '80px';
       }
    });
+
+   // $('#menuId ul li a').click(function () {
+   //    $('.navIcon').toggleClass('open');
+   //    $('.navSidebar').width('35px');
+   //    $('#menuId').style('left: 500px');
+      
+   // });
 
       // controls animation on scroll
       AOS.init();
