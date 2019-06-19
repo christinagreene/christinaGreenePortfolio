@@ -20,13 +20,13 @@ header {
    }
    .mainTitle {
       text-align: center;
-      padding-left: 9%;
+      padding-left: 6%;
       h1 {
       font-family: $mainHeadingFont;
       font-size: 21rem;
       text-transform: lowercase;
       line-height: 1;
-      margin: 7% 0 2% 0;
+      margin: 15% 0 2% 0;
       }
       span {
          display: block;
@@ -41,7 +41,7 @@ header {
    .arrow {
       position: absolute;
       bottom: 5%;
-      left: 54%;
+      left: 52.5%;
       transform: translate (-50%, -50%);
       span {
          display: block;
