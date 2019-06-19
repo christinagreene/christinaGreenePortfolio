@@ -222,9 +222,10 @@ h4 {
 }
 
 h2 {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Raph Lanok Future", "Euphoria Script", cursive;
   font-size: 4rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  letter-spacing: 3px;
   padding: 3% 0;
 }
 
@@ -235,7 +236,12 @@ h3 {
 
 h4 {
   font-size: 2.3rem;
+  font-weight: 400;
   padding-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
 }
 
 .about,
@@ -298,6 +304,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
 header .navSidebar {
@@ -315,12 +325,15 @@ header .navSidebar {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 25px 22px 0 23px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 header .mainTitle {
-  width: 89%;
   text-align: center;
-  margin: 0;
+  padding-left: 9%;
 }
 
 header .mainTitle h1 {
@@ -345,7 +358,7 @@ header .mainTitle h2 {
 header .arrow {
   position: absolute;
   bottom: 5%;
-  left: 55%;
+  left: 54%;
   -webkit-transform: translate -50%, -50%;
           transform: translate -50%, -50%;
 }
@@ -742,9 +755,6 @@ header .arrow span:hover {
 }
 
 @media (max-width: 768px) {
-  header {
-    height: auto;
-  }
   header .mainTitle h1 {
     font-size: 20vw;
     margin-top: 30%;
@@ -778,7 +788,7 @@ header .arrow span:hover {
   .projectContainer .projectThree,
   .projectContainer .projectFour {
     width: 100%;
-    padding: 5% 0;
+    padding: 8% 0;
   }
   .skillsContainer {
     -webkit-box-pack: center;
@@ -813,6 +823,20 @@ header .arrow span:hover {
 }
 
 @media (max-width: 480px) {
+  header,
+  header .navSidebar {
+    height: 75vh;
+  }
+  header .mainTitle {
+    padding: 5% 0  0 15%;
+  }
+  .menu {
+    height: auto;
+    padding-bottom: 70px;
+  }
+  .hamburgerMenuSocial {
+    display: none;
+  }
   .skillsContainer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -820,6 +844,12 @@ header .arrow span:hover {
   }
   .skillsContainer .icon {
     width: 33%;
+  }
+}
+
+@media (max-width: 375px) {
+  header .mainTitle {
+    padding: 25% 0 0 25%;
   }
 }
 /*# sourceMappingURL=style.css.map */

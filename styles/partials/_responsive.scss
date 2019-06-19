@@ -1,7 +1,6 @@
 // Landscape phone to portrait tablet
 @media (max-width: 768px) {
    header {
-      height: auto;
       .mainTitle {
          h1 {
             font-size:  20vw;
@@ -33,7 +32,7 @@
       .projectThree,
       .projectFour {
          width: 100%;
-         padding: 5% 0;
+         padding: 8% 0;
       }
    }
 
@@ -65,6 +64,25 @@
 }
 // Landscape phones and down
 @media (max-width: 480px) {
+   header,
+   header .navSidebar {
+      height: 75vh;
+   }
+
+   header{
+      .mainTitle {
+         padding: 5% 0  0 15%;
+      }
+   }
+
+   .menu {
+      height: auto;
+      padding-bottom: 70px;
+   }
+
+   .hamburgerMenuSocial {
+      display: none;
+   }
    .skillsContainer {
       justify-content: center;
       .icon {
@@ -73,6 +91,11 @@
    }
 }
 // Smallest screen sizes (smallest = 320px)
-@media (max-width: 360px) {
+@media (max-width: 375px) {
+   header {
+      .mainTitle {
+         padding: 25% 0 0 25%;
+      }
+   }
 
 }

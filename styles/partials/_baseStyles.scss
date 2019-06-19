@@ -33,9 +33,10 @@ h4 {
 }
 
 h2 {
-   font-family: $headingFont;
+   font-family: $mainHeadingFont;
    font-size: 4rem;
-   text-transform: uppercase;
+   text-transform: capitalize;
+   letter-spacing: 3px;
    padding: 3% 0;
 }
 
@@ -46,7 +47,12 @@ h3 {
 
 h4 {
    font-size: 2.3rem;
+   font-weight: 400;
    padding-bottom: 20px;
+}
+
+p {
+   line-height: 1.6;
 }
 
 .about,

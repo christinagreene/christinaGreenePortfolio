@@ -4,20 +4,23 @@ header {
    height: 100vh;
    display: flex;
    flex-direction: row;
+   justify-content: center;
+   position: relative;
    .navSidebar {
       background: $primaryColour;
       width: 80px;
       height: 100vh;
-      // position: fixed;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       padding: 25px 22px 0 23px;
+      position: absolute;
+      left: 0;
+      transition: .5s ease-in-out;
    }
    .mainTitle {
-      width: 89%;
       text-align: center;
-      margin: 0;
+      padding-left: 9%;
       h1 {
       font-family: $mainHeadingFont;
       font-size: 21rem;
@@ -38,7 +41,7 @@ header {
    .arrow {
       position: absolute;
       bottom: 5%;
-      left: 55%;
+      left: 54%;
       transform: translate (-50%, -50%);
       span {
          display: block;
@@ -220,3 +223,5 @@ header {
       }
    }
 }
+
+
