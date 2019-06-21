@@ -331,9 +331,13 @@ header .navSidebar {
   transition: .5s ease-in-out;
 }
 
+header .navSidebarExtended {
+  width: 240px;
+}
+
 header .mainTitle {
   text-align: center;
-  padding-left: 9%;
+  padding-left: 6%;
 }
 
 header .mainTitle h1 {
@@ -341,7 +345,7 @@ header .mainTitle h1 {
   font-size: 21rem;
   text-transform: lowercase;
   line-height: 1;
-  margin: 7% 0 2% 0;
+  margin: 15% 0 2% 0;
 }
 
 header .mainTitle span {
@@ -358,7 +362,7 @@ header .mainTitle h2 {
 header .arrow {
   position: absolute;
   bottom: 5%;
-  left: 54%;
+  left: 52.5%;
   -webkit-transform: translate -50%, -50%;
           transform: translate -50%, -50%;
 }
@@ -455,19 +459,19 @@ header .arrow span:hover {
   border: 1px dashed #001918;
 }
 
-.navIcon.open span:nth-child(1) {
+.navIcon.hamburgerOpen span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 8px;
   left: 8px;
 }
 
-.navIcon.open span:nth-child(2) {
+.navIcon.hamburgerOpen span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
 
-.navIcon.open span:nth-child(3) {
+.navIcon.hamburgerOpen span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 33px;
@@ -484,6 +488,10 @@ header .arrow span:hover {
   margin-top: 55px;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
+}
+
+.menuExtended {
+  left: 0px;
 }
 
 .menu ul {

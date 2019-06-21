@@ -18,6 +18,9 @@ header {
       left: 0;
       transition: .5s ease-in-out;
    }
+   .navSidebarExtended {
+      width: 240px;
+   }
    .mainTitle {
       text-align: center;
       padding-left: 6%;
@@ -136,7 +139,7 @@ header {
 }
 
 //Hamburger menu when class .open is applied
-.navIcon.open span {
+.navIcon.hamburgerOpen span {
    &:nth-child(1) {
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
@@ -171,6 +174,10 @@ header {
    text-align: center;
    margin-top: 55px;
    transition: .5s ease-in-out;
+}
+
+.menuExtended {
+   left: 0px;
 }
 
 .menu ul {
