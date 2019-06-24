@@ -2,9 +2,11 @@
 @media (max-width: 768px) {
    header {
       .mainTitle {
+         padding-top: 25vh;
+         padding-left: 12%;
          h1 {
             font-size:  20vw;
-            margin-top: 30%;
+            margin: 0;
          }
          h2 {
             font-size: 3.9vw;
@@ -66,18 +68,21 @@
 @media (max-width: 480px) {
    header,
    header .navSidebar {
-      height: 88vh;
+      height: 95vh;
    }
 
    header{
       .mainTitle {
-         padding: 5% 0  0 15%;
+         padding: 40% 0  0 18%;
+      }
+      .arrow {
+         left: 58%;
       }
    }
 
    .menu {
       height: auto;
-      padding-bottom: 186px;
+      padding-bottom: 230px;
    }
 
    .hamburgerMenuSocial {
@@ -94,7 +99,7 @@
 @media (max-width: 375px) {
    header {
       .mainTitle {
-         padding: 25% 0 0 25%;
+         padding: 55% 0 0 25%;
       }
    }
 

@@ -11,14 +11,13 @@ $(document).ready(function () {
       $('.navSidebar').toggleClass('navSidebarExtended');
    });
 
-   // remove all class when a tag is clickeed
-
+   // remove all classes when any a tag is clicked
    $('.menu ul li a').click(function () {
       $('.navIcon').removeClass('hamburgerOpen');
       $('.menu').removeClass('menuExtended');
       $('.navSidebar').removeClass('navSidebarExtended');
    });
 
-   // controls animation on scroll
+   // controls animation on scroll (disabled for most mobiles)
    AOS.init({ disable: window.innerWidth < 500});
 });
