@@ -776,7 +776,7 @@ header .arrow span:hover {
     margin: 0;
   }
   header .mainTitle h2 {
-    font-size: 3vw;
+    font-size: 3.3vw;
     padding-top: 10%;
   }
   .aboutContainer {
@@ -870,6 +870,26 @@ header .arrow span:hover {
 @media (max-width: 375px) {
   header .mainTitle {
     padding: 55% 0 0 25%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1200px) and (orientation: landscape) {
+  header .sidebarSocial,
+  header .hamburgerMenuSocial {
+    display: none;
+  }
+  header .menu {
+    height: auto;
+  }
+  header .mainTitle {
+    padding-top: 6%;
+  }
+  header .mainTitle h1 {
+    font-size: 17vw;
+  }
+  header .mainTitle h2 {
+    font-size: 1.8rem;
+    padding-top: 3%;
   }
 }
 /*# sourceMappingURL=style.css.map */

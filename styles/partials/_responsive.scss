@@ -9,7 +9,7 @@
             margin: 0;
          }
          h2 {
-            font-size: 3vw;
+            font-size: 3.3vw;
             padding-top: 10%;
          }
       }
@@ -104,4 +104,29 @@
       }
    }
 
+}
+
+
+// specific settings for landscape orientation only
+@media only screen and (min-device-width : 320px) and (max-device-width : 1200px) and (orientation : landscape) {
+   header {
+      // height: auto;
+      .sidebarSocial,
+      .hamburgerMenuSocial {
+         display: none;
+      }
+      .menu {
+         height: auto;
+      }
+      .mainTitle {
+         padding-top: 6%;
+         h1 {
+            font-size: 17vw;
+         }
+         h2 {
+            font-size: 1.8rem;
+            padding-top: 3%;
+         }
+      }
+   }
 }
