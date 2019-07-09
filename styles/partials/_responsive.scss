@@ -1,15 +1,16 @@
-// Landscape phone to portrait tablet
-@media (max-width: 768px) {
+// Landscape phone to portrait tablet (starting at 768px)
+@media (max-width: 790px) {
    header {
       .mainTitle {
          padding-top: 25vh;
          padding-left: 12%;
          h1 {
-            font-size:  20vw;
+            font-size:  21vw;
             margin: 0;
          }
          h2 {
-            font-size: 3.9vw;
+            font-size: 3vw;
+            padding-top: 10%;
          }
       }
    }

@@ -226,7 +226,7 @@ h2 {
   font-size: 4rem;
   text-transform: capitalize;
   letter-spacing: 3px;
-  padding: 3% 0;
+  padding: 4% 0;
 }
 
 h3 {
@@ -329,6 +329,10 @@ header .navSidebar {
   left: 0;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
+}
+
+header .navSidebar .sidebarSocial {
+  margin-left: -2px;
 }
 
 header .navSidebarExtended {
@@ -563,7 +567,7 @@ header .arrow span:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0 5% 0;
+  padding: 0 0 6% 0;
 }
 
 .aboutContainer .headshotContainer {
@@ -596,7 +600,7 @@ header .arrow span:hover {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 3%;
+  padding-bottom: 8%;
 }
 
 .projectContainer .projectOne,
@@ -762,17 +766,18 @@ header .arrow span:hover {
   padding: 15px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 790px) {
   header .mainTitle {
     padding-top: 25vh;
     padding-left: 12%;
   }
   header .mainTitle h1 {
-    font-size: 20vw;
+    font-size: 21vw;
     margin: 0;
   }
   header .mainTitle h2 {
-    font-size: 3.9vw;
+    font-size: 3vw;
+    padding-top: 10%;
   }
   .aboutContainer {
     -webkit-box-orient: vertical;

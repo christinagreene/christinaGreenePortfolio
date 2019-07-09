@@ -17,6 +17,9 @@ header {
       position: absolute;
       left: 0;
       transition: .5s ease-in-out;
+      .sidebarSocial {
+         margin-left: -2px;
+      }
    }
    .navSidebarExtended {
       width: 240px;
