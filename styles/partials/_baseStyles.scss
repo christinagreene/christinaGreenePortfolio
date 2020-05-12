@@ -66,14 +66,14 @@ p {
    background: $white;
 }
 
-.imageContainer,
+.projectImage,
 .post img {
    border: 2px solid $accentColour;
    box-shadow: 0 0 7px $accentColour;
    transition: .3s ease-in-out;
-   &:hover {
-      transform: scale(1.1);
-   }
+   // &:hover {
+   //    transform: scale(1.1);
+   // }
    &:active {
       box-shadow: 0 0 10px $accentColour;
    }

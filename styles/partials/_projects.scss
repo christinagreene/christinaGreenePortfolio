@@ -1,26 +1,50 @@
-.projectContainer {
+.projects {
+   padding-bottom: 75px;
+}
+
+.projectsContainer,
+.project {
    display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   padding-bottom: 8%;
-   .projectOne,
-   .projectTwo,
-   .projectThree,
-   .projectFour {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+}
+
+.projectsContainer {
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   .projectsLeft,
+   .projectsCentre,
+   .projectsRight {
+      width: 30%;
    }
-   .projectOne,
-   .projectThree {
-      padding-right: 5%;
+   .project {
+      padding: 10px 0 50px 0;
    }
-   .projectTwo,
-   .projectFour {
-      padding-left: 5%;
+   .projectLinks {
+      text-align: right;
+      padding-top: 20px;
+      a {
+         background: $accentColour;
+         color: $white;
+         text-decoration: none;
+         padding: 10px;
+         box-shadow: 0 0 7px $accentColour;
+      }
    }
-   .projectThree {
-      padding-top: 60px;
+
+   h3,
+   p {
+      text-transform: lowercase;
+      letter-spacing: 1px;
+      text-align: left;
+   }
+   h3 {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 2.3rem;
+      font-style: italic;
+      padding: 40px 0 0 5px;
+   }
+   p {
+      margin: 0;
+      text-align: right;
    }
 }
