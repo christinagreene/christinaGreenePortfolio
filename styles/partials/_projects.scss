@@ -1,50 +1,75 @@
 .projects {
    padding-bottom: 75px;
-}
 
-.projectsContainer,
-.project {
-   display: flex;
-}
+   .projectsContainer,
+   .project,
+   .newProjects {
+      display: flex;
+   }
 
-.projectsContainer {
-   flex-flow: row nowrap;
-   justify-content: space-between;
-   .projectsLeft,
-   .projectsCentre,
-   .projectsRight {
-      width: 30%;
-   }
-   .project {
-      padding: 10px 0 50px 0;
-   }
-   .projectLinks {
-      text-align: right;
-      padding-top: 20px;
-      a {
-         background: $accentColour;
-         color: $white;
-         text-decoration: none;
-         padding: 10px;
-         box-shadow: 0 0 7px $accentColour;
+   .projectsContainer {
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding-bottom: 50px;
+      .projectsLeft,
+      .projectsCentre,
+      .projectsRight {
+         width: 30%;
       }
+      .project {
+         padding: 10px 0 50px 0;
+      }  
    }
 
-   h3,
+   .projectType,
    p {
       text-transform: lowercase;
-      letter-spacing: 1px;
-      text-align: left;
    }
-   h3 {
+
+   .projectType {
       writing-mode: vertical-rl;
       transform: rotate(180deg);
       font-size: 2.3rem;
       font-style: italic;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-align: left;
       padding: 40px 0 0 5px;
    }
+
    p {
-      margin: 0;
+      font-size: 1.8rem;
+      margin: 0 0 5px 0;
       text-align: right;
    }
+
+   .projectLinks {
+      text-align: right;
+      padding-top: 20px;
+
+      a {
+         background: $accentColour;
+         color: $white;
+         font-size: 1.4rem;
+         text-decoration: none;
+         box-shadow: 0 0 7px $accentColour;
+         border-radius: 50%;
+         padding: 8px 10px;
+         margin-left: 5px;
+      }
+   }
+
+   .newProjects {
+      flex-direction: row;
+      justify-content: space-around;
+      .newProject {
+         width: 40%;
+      }
+      .inactive {
+         pointer-events: none;
+         cursor: default;
+
+      }
+   }
 }
+

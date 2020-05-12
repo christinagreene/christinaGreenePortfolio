@@ -221,11 +221,16 @@ h4 {
   text-align: center;
 }
 
-h2 {
+h2,
+.newProjectsHeading,
+.newSkillsHeading {
   font-family: "Raph Lanok Future", "Euphoria Script", cursive;
-  font-size: 4rem;
   text-transform: capitalize;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 4rem;
   padding: 4% 0;
 }
 
@@ -255,6 +260,17 @@ p {
   background: #F9F5F5;
 }
 
+.newProjectsContainer,
+.newSkillsContainer {
+  padding: 20px 0;
+}
+
+.newProjectsHeading,
+.newSkillsHeading {
+  font-size: 3.2rem;
+  padding: 30px 0;
+}
+
 .projectImage,
 .post img {
   border: 2px solid #662738;
@@ -273,6 +289,15 @@ p {
 .projectImage:focus,
 .post img:focus {
   border: 1px dotted #001918;
+}
+
+.sectionSeparator {
+  background: #001918;
+  display: block;
+  width: 400px;
+  height: 1px;
+  border-radius: 5px;
+  margin: 0 auto;
 }
 
 footer {
@@ -319,10 +344,11 @@ header .navSidebar {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 25px 22px 0 23px;
-  position: absolute;
+  position: fixed;
   left: 0;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
+  z-index: 1;
 }
 
 header .navSidebar .sidebarSocial {
@@ -341,6 +367,7 @@ header .mainTitle {
 header .mainTitle h1 {
   font-family: "Raph Lanok Future", "Euphoria Script", cursive;
   font-size: 21rem;
+  letter-spacing: -3px;
   text-transform: lowercase;
   line-height: 1;
   margin: 15% 0 2% 0;
@@ -490,7 +517,7 @@ header .arrow span:hover {
 
 .menuExtended {
   left: 0px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .menu ul {
@@ -591,14 +618,15 @@ header .arrow span:hover {
   padding-bottom: 75px;
 }
 
-.projectsContainer,
-.project {
+.projects .projectsContainer,
+.projects .project,
+.projects .newProjects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.projectsContainer {
+.projects .projectsContainer {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
@@ -606,40 +634,25 @@ header .arrow span:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 50px;
 }
 
-.projectsContainer .projectsLeft,
-.projectsContainer .projectsCentre,
-.projectsContainer .projectsRight {
+.projects .projectsContainer .projectsLeft,
+.projects .projectsContainer .projectsCentre,
+.projects .projectsContainer .projectsRight {
   width: 30%;
 }
 
-.projectsContainer .project {
+.projects .projectsContainer .project {
   padding: 10px 0 50px 0;
 }
 
-.projectsContainer .projectLinks {
-  text-align: right;
-  padding-top: 20px;
-}
-
-.projectsContainer .projectLinks a {
-  background: #662738;
-  color: #F9F5F5;
-  text-decoration: none;
-  padding: 10px;
-  -webkit-box-shadow: 0 0 7px #662738;
-          box-shadow: 0 0 7px #662738;
-}
-
-.projectsContainer h3,
-.projectsContainer p {
+.projects .projectType,
+.projects p {
   text-transform: lowercase;
-  letter-spacing: 1px;
-  text-align: left;
 }
 
-.projectsContainer h3 {
+.projects .projectType {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -647,41 +660,107 @@ header .arrow span:hover {
           transform: rotate(180deg);
   font-size: 2.3rem;
   font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: left;
   padding: 40px 0 0 5px;
 }
 
-.projectsContainer p {
-  margin: 0;
+.projects p {
+  font-size: 1.8rem;
+  margin: 0 0 5px 0;
   text-align: right;
 }
 
-.skillsContainer {
+.projects .projectLinks {
+  text-align: right;
+  padding-top: 20px;
+}
+
+.projects .projectLinks a {
+  background: #662738;
+  color: #F9F5F5;
+  font-size: 1.4rem;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 7px #662738;
+          box-shadow: 0 0 7px #662738;
+  border-radius: 50%;
+  padding: 8px 10px;
+  margin-left: 5px;
+}
+
+.projects .newProjects {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.projects .newProjects .newProject {
+  width: 40%;
+}
+
+.projects .newProjects .inactive {
+  pointer-events: none;
+  cursor: default;
+}
+
+.skills .skillsContainer,
+.skills .newSkills,
+.skills .photoshopIcon,
+.skills .illustratorIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
+}
+
+.skills .skillsContainer,
+.skills .newSkills {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  text-align: center;
-  padding: 0 0 5% 0;
+  padding-bottom: 10px;
 }
 
-.skillsContainer .icon {
+.skills .icon {
   width: 20%;
-  padding: 20px 0 50px 0;
+  padding: 20px 0 40px 0;
 }
 
-.skillsContainer .icon i {
+.skills .icon i {
   font-size: 5rem;
 }
 
-.skillsContainer .icon p {
+.skills .icon p {
   margin: 0;
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
+  padding: 15px 0;
+}
+
+.skills .newSkills {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills .newSkills img {
+  max-width: 50px;
+}
+
+.photoshopIcon,
+.illustratorIcon {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .blogContainer {
@@ -718,6 +797,19 @@ header .arrow span:hover {
 .blogContainer .post p {
   margin: 0;
   padding: 15px 0 30px 0;
+}
+
+.blogContainer .post .views p {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+.blogContainer .post2 .views p {
+  padding-top: 35px;
+}
+
+.blogContainer .post3 .views p {
+  padding-top: 65px;
 }
 
 .contactContainer {
