@@ -1,4 +1,4 @@
-// Custom Font Import for Header
+// Custom Font Import for Headings
 @font-face {
    font-family: 'Raph Lanok Future';
    src: url('../../assets/raphLanokFutureFont/RaphLanokFuture.eot?') format("eot"),
@@ -9,9 +9,8 @@
 }
 
 /////////////// Base Fonts /////////////
-$baseFont: 'Raleway', sans-serif;
-// $headingFont: 'Abril Fatface', cursive;
 $mainHeadingFont: 'Raph Lanok Future', 'Euphoria Script', cursive;
+$baseFont: 'Raleway', sans-serif;
 
 ///////////// Base Colours /////////////
 $primaryColour: #93A195;

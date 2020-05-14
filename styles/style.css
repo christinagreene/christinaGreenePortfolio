@@ -276,19 +276,18 @@ p {
   border: 2px solid #662738;
   -webkit-box-shadow: 0 0 7px #662738;
           box-shadow: 0 0 7px #662738;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
 }
 
 .projectImage:active,
 .post img:active {
-  -webkit-box-shadow: 0 0 10px #662738;
-          box-shadow: 0 0 10px #662738;
+  -webkit-box-shadow: 0 0 20px #662738;
+          box-shadow: 0 0 20px #662738;
 }
 
 .projectImage:focus,
 .post img:focus {
-  border: 1px dotted #001918;
+  -webkit-box-shadow: 0 0 20px #001918;
+          box-shadow: 0 0 20px #001918;
 }
 
 .sectionSeparator {
@@ -344,7 +343,7 @@ header .navSidebar {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 25px 22px 0 23px;
-  position: fixed;
+  position: absolute;
   left: 0;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
@@ -637,14 +636,14 @@ header .arrow span:hover {
   padding-bottom: 50px;
 }
 
+.projects .projectsContainer .project {
+  padding: 10px 0 50px 0;
+}
+
 .projects .projectsContainer .projectsLeft,
 .projects .projectsContainer .projectsCentre,
 .projects .projectsContainer .projectsRight {
   width: 30%;
-}
-
-.projects .projectsContainer .project {
-  padding: 10px 0 50px 0;
 }
 
 .projects .projectType,
@@ -672,6 +671,42 @@ header .arrow span:hover {
   text-align: right;
 }
 
+.projects .projectImage {
+  position: relative;
+}
+
+.projects .projectImage a,
+.projects .projectImage a:active,
+.projects .projectImage a:focus,
+.projects .projectImage a:visited {
+  color: #001918;
+}
+
+.projects .projectImage .projectBio {
+  opacity: 0;
+  background: rgba(249, 245, 245, 0.97);
+  font-size: 1.55rem;
+  text-align: center;
+  text-transform: none;
+  overflow: scroll;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 4px 7px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.projects .projectImage:hover .projectBio {
+  background: rgba(249, 245, 245, 0.95);
+  opacity: 1;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
 .projects .projectLinks {
   text-align: right;
   padding-top: 20px;
@@ -682,11 +717,31 @@ header .arrow span:hover {
   color: #F9F5F5;
   font-size: 1.4rem;
   text-decoration: none;
+  border: 2px solid #662738;
   -webkit-box-shadow: 0 0 7px #662738;
           box-shadow: 0 0 7px #662738;
   border-radius: 50%;
   padding: 8px 10px;
   margin-left: 5px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.projects .projectLinks a:hover {
+  -webkit-box-shadow: 0 0 20px #662738;
+          box-shadow: 0 0 20px #662738;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.projects .projectLinks a:active {
+  background: #F9F5F5;
+  color: #662738;
+}
+
+.projects .projectLinks a:focus {
+  -webkit-box-shadow: 0 0 20px #001918;
+          box-shadow: 0 0 20px #001918;
 }
 
 .projects .newProjects {
@@ -804,12 +859,16 @@ header .arrow span:hover {
   padding: 0 0 20px 0;
 }
 
-.blogContainer .post2 .views p {
-  padding-top: 35px;
+.blogContainer .post img {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
-.blogContainer .post3 .views p {
-  padding-top: 65px;
+.blogContainer .post img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .contactContainer {

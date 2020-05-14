@@ -15,10 +15,11 @@ header {
       flex-direction: column;
       justify-content: space-between;
       padding: 25px 22px 0 23px;
-      position: fixed;
+      position: absolute;
       left: 0;
       transition: .5s ease-in-out;
       z-index: 1;
+
       .sidebarSocial {
          margin-left: -2px;
       }
@@ -58,6 +59,7 @@ header {
       bottom: 5%;
       left: 52.5%;
       transform: translate (-50%, -50%);
+
       span {
          display: block;
          width: 15px;
@@ -66,6 +68,7 @@ header {
          border-right: 2px solid $secondaryColour;
          transform: rotate(45deg);
          animation: animate 3s infinite;
+
          &:hover {
             animation: none;
          }
@@ -144,6 +147,7 @@ header {
       &:hover {
       color: $accentColour;
       }
+
       &:focus {
          border: 1px dashed $black;
       }
@@ -152,6 +156,7 @@ header {
 
 //Hamburger menu when class .open is applied
 .navIcon.hamburgerOpen span {
+
    &:nth-child(1) {
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
@@ -197,8 +202,10 @@ header {
    list-style: none;
    padding: 10px 0;
    margin: 0;
+
    li {
       display: flex;
+
       a {
          text-decoration: none;
          color: $secondaryColour;
@@ -206,13 +213,16 @@ header {
          padding: 5%;
          flex: 1;
          transition: .5s ease-in-out;
+
          &:hover {
             background:$secondaryColour;
             color: $white;
          }
+
          &:active {
             color: $accentColour;
          }
+
          &:focus {
             border: 1px dotted $black;
          }
@@ -225,17 +235,22 @@ header {
    text-align: center;
    list-style: none;
    padding: 0;
+   
    li {
       padding: 20px 0;
+
       a {
          color: $secondaryColour;
          padding: 10px;
+
          &:hover {
             color: $black;
          }
+
          &:active {
             color: $accentColour;
          }
+         
          &:focus {
             border: 1px dotted $black;
          }
