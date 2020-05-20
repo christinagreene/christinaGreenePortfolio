@@ -1,23 +1,35 @@
+.about h2 {
+   padding-bottom: 2%;
+}
+
 .aboutContainer {
-   display: flex;
-   align-items: center;
    padding: 0 0 6% 0;
 
    .headshotContainer {
-      width: 35%;
-      padding-right: 3%;
-
+      width: 20%;
+      padding-bottom: 40px;
+      margin: 0 auto;
+      
       img {
          border: 2px solid $secondaryColour;
          box-shadow: 0 0 10px $secondaryColour;
+         border-radius: 50%;
       }
    }
    .aboutDescription {
-      width: 65%;
-      padding-left: 2%;
-      
-      p:first-of-type {
-         margin-top: 0;
+      font-size: 1.8rem;
+      text-align: justify;
+
+      .aboutTagline {
+         font-size: 2rem;
+         line-height: 1.5;
+         width: 70%;
+         margin: 0 auto;
+         padding-bottom: 20px;
+      }
+
+      .boldText {
+         font-weight: 700;
       }
    }
 }

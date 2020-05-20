@@ -359,8 +359,19 @@ header .navSidebarExtended {
 }
 
 header .mainTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   padding-left: 6%;
+  padding-bottom: 100px;
 }
 
 header .mainTitle h1 {
@@ -583,34 +594,42 @@ header .arrow span:hover {
   border: 1px dotted #001918;
 }
 
+.about h2 {
+  padding-bottom: 2%;
+}
+
 .aboutContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 0 0 6% 0;
 }
 
 .aboutContainer .headshotContainer {
-  width: 35%;
-  padding-right: 3%;
+  width: 20%;
+  padding-bottom: 40px;
+  margin: 0 auto;
 }
 
 .aboutContainer .headshotContainer img {
   border: 2px solid #59675E;
   -webkit-box-shadow: 0 0 10px #59675E;
           box-shadow: 0 0 10px #59675E;
+  border-radius: 50%;
 }
 
 .aboutContainer .aboutDescription {
-  width: 65%;
-  padding-left: 2%;
+  font-size: 1.8rem;
+  text-align: justify;
 }
 
-.aboutContainer .aboutDescription p:first-of-type {
-  margin-top: 0;
+.aboutContainer .aboutDescription .aboutTagline {
+  font-size: 2rem;
+  line-height: 1.5;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.aboutContainer .aboutDescription .boldText {
+  font-weight: 700;
 }
 
 .projects {
@@ -667,8 +686,12 @@ header .arrow span:hover {
 
 .projects p {
   font-size: 1.8rem;
-  margin: 0 0 5px 0;
   text-align: right;
+  margin: 0;
+}
+
+.projects .projectSpecs p {
+  margin-bottom: 5px;
 }
 
 .projects .projectImage {
@@ -683,21 +706,31 @@ header .arrow span:hover {
 }
 
 .projects .projectImage .projectBio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 0;
   background: rgba(249, 245, 245, 0.97);
-  font-size: 1.55rem;
-  text-align: center;
-  text-transform: none;
-  overflow: scroll;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: 0;
-  padding: 4px 7px;
+  padding: 0px 10px;
+  overflow: scroll;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+.projects .projectImage .projectBio p {
+  font-size: 1.55rem;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: none;
 }
 
 .projects .projectImage:hover .projectBio {
@@ -938,32 +971,31 @@ header .arrow span:hover {
   padding: 15px 0;
 }
 
-@media (max-width: 790px) {
+@media (max-width: 900px) {
   header .mainTitle {
-    padding-top: 25vh;
-    padding-left: 12%;
+    padding-bottom: 70px;
   }
   header .mainTitle h1 {
     font-size: 21vw;
-    margin: 0;
   }
   header .mainTitle h2 {
-    font-size: 3.3vw;
-    padding-top: 10%;
+    font-size: 3vw;
   }
-  .aboutContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  header .menu {
+    height: auto;
   }
-  .aboutContainer .headshotContainer {
-    padding: 0;
-    margin: 0 auto;
-  }
-  .aboutContainer .aboutDescription {
+  .aboutContainer .aboutDescription .aboutTagline {
     width: 100%;
-    padding: 6% 0;
+  }
+}
+
+@media (max-width: 790px) {
+  header .mainTitle {
+    padding-left: 12%;
+    padding-bottom: 0;
+  }
+  header .mainTitle h1 {
+    margin: 0;
   }
   .projectContainer {
     -webkit-box-orient: vertical;
@@ -1011,20 +1043,44 @@ header .arrow span:hover {
   }
 }
 
-@media (max-width: 480px) {
-  header,
-  header .navSidebar {
-    height: 95vh;
+@media (max-width: 550px) {
+  h2 {
+    padding: 8% 0;
   }
+  header .mainTitle h1 {
+    font-size: 11rem;
+  }
+  header .mainTitle h2 {
+    font-size: 2rem;
+    padding-top: 40px;
+  }
+  .about h2 {
+    padding-bottom: 4%;
+  }
+  .about .aboutContainer {
+    padding-bottom: 10%;
+  }
+  .about .aboutContainer .headshotContainer {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
   header .mainTitle {
-    padding: 40% 0  0 18%;
+    padding-left: 15%;
+  }
+  header .mainTitle h1 {
+    font-size: 22vw;
+  }
+  header .mainTitle h2 {
+    font-size: 4.5vw;
   }
   header .arrow {
-    left: 58%;
+    left: 55%;
   }
-  .menu {
+  .menuExtended {
     height: auto;
-    padding-bottom: 230px;
+    padding-bottom: 215px;
   }
   .hamburgerMenuSocial {
     display: none;
@@ -1040,12 +1096,21 @@ header .arrow span:hover {
 }
 
 @media (max-width: 375px) {
+  h2 {
+    font-size: 10vw;
+  }
   header .mainTitle {
-    padding: 55% 0 0 25%;
+    padding: 0 0 0 25%;
   }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1200px) and (orientation: landscape) {
+  header {
+    height: 121vh;
+  }
+  header .navSidebar {
+    height: 121vh;
+  }
   header .sidebarSocial,
   header .hamburgerMenuSocial {
     display: none;
@@ -1062,6 +1127,9 @@ header .arrow span:hover {
   header .mainTitle h2 {
     font-size: 1.8rem;
     padding-top: 3%;
+  }
+  header .mainTitle .arrow {
+    bottom: 21%;
   }
 }
 /*# sourceMappingURL=style.css.map */

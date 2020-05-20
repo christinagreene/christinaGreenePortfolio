@@ -41,8 +41,12 @@
 
    p {
       font-size: 1.8rem;
-      margin: 0 0 5px 0;
       text-align: right;
+      margin: 0;
+   }
+
+   .projectSpecs p {
+      margin-bottom: 5px;
    }
    
    .projectImage {
@@ -56,20 +60,26 @@
       }
 
       .projectBio {
+         display: flex;
+         align-items: center;
          opacity: 0;
          background: rgba(249, 245, 245, 0.97);
-         font-size: 1.55rem;
-         text-align: center;
-         text-transform: none;
-         overflow: scroll;
          position: absolute;
          top: 0;
          right: 0;
          bottom: 0;
          left: 0;
          margin: 0;
-         padding: 4px 7px;
+         padding: 0px 10px;
+         overflow: scroll;
          transition: all .3s ease-in-out;
+      }
+      
+      .projectBio p {
+         font-size: 1.55rem;
+         line-height: 1.4;
+         text-align: center;
+         text-transform: none;
       }
       
       &:hover .projectBio {
@@ -125,4 +135,3 @@
       }
    }
 }
-

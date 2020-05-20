@@ -1,35 +1,51 @@
-// Landscape phone to portrait tablet (starting at 768px)
-@media (max-width: 790px) {
+/////////////////////////////////////////////////////////
+@media (max-width: 900px) {
    header {
+
       .mainTitle {
-         padding-top: 25vh;
-         padding-left: 12%;
+         padding-bottom: 70px;
+
          h1 {
             font-size:  21vw;
-            margin: 0;
          }
+
          h2 {
-            font-size: 3.3vw;
-            padding-top: 10%;
+            font-size: 3vw;
          }
+      }
+
+      .menu {
+         height: auto;
       }
    }
 
    .aboutContainer {
-      flex-direction: column;
-      .headshotContainer {
-         padding: 0;
-         margin: 0 auto;
-      }
       .aboutDescription {
-         width: 100%;
-         padding: 6% 0;
+         .aboutTagline {
+            width: 100%;
+         }
+      }
+   }
+}
+
+/////////////////////////////////////////////////////////
+@media (max-width: 790px) {
+   header {
+
+      .mainTitle {
+         padding-left: 12%;
+         padding-bottom: 0;
+
+         h1 {
+            margin: 0;
+         }
       }
    }
 
    .projectContainer {
       flex-direction: column;
       padding-bottom: 8%;
+
       .projectOne,
       .projectTwo,
       .projectThree,
@@ -41,6 +57,7 @@
 
    .skillsContainer {
       justify-content: center;
+
       .icon {
          width: 25%;
       }
@@ -48,6 +65,7 @@
 
    .blogContainer {
       justify-content: center;
+
       .post {
          width: 100%;
          padding: 3% 0 6% 0;
@@ -56,76 +74,149 @@
 
    .contactContainer {
       flex-direction: column;
+      
       .contactParagraph,
       .contactPoints {
          width: 100%;
       }
+
       .contactSocial {
          padding: 7% 0;
       }
    }
 }
-// Landscape phones and down
-@media (max-width: 480px) {
-   header,
-   header .navSidebar {
-      height: 95vh;
+
+/////////////////////////////////////////////////////////
+@media (max-width: 550px) {
+
+   h2 {
+      padding: 8% 0;
    }
 
-   header{
+   header {
+
       .mainTitle {
-         padding: 40% 0  0 18%;
-      }
-      .arrow {
-         left: 58%;
+         
+         h1 {
+            font-size: 11rem;
+         }
+
+         h2 {
+            font-size: 2rem;
+            padding-top: 40px;
+         }
       }
    }
 
-   .menu {
+   .about {
+
+      h2 {
+      padding-bottom: 4%;
+      }
+
+      .aboutContainer {
+         padding-bottom: 10%;
+
+         .headshotContainer {
+            width: 40%;
+         }
+      }
+   }
+}
+
+/////////////////////////////////////////////////////////
+@media (max-width: 480px) {
+   // header,
+   // header .navSidebar {
+   //    height: 95vh;
+   // }
+
+   header {
+
+      .mainTitle {
+         padding-left: 15%;
+
+         h1 {
+            font-size: 22vw;
+         }
+
+         h2 {
+            font-size: 4.5vw;
+         }
+      }
+
+      .arrow {
+         left: 55%;
+      }
+   }
+
+   .menuExtended {
       height: auto;
-      padding-bottom: 230px;
+      padding-bottom: 215px; // might need to change based on phone types
    }
 
    .hamburgerMenuSocial {
       display: none;
    }
+
    .skillsContainer {
       justify-content: center;
+
       .icon {
          width: 33%;
       }
    }
 }
+
+/////////////////////////////////////////////////////////
 // Smallest screen sizes (smallest = 320px)
 @media (max-width: 375px) {
+   h2 {
+      font-size: 10vw;
+   }
+   
    header {
+
       .mainTitle {
-         padding: 55% 0 0 25%;
+         padding: 0 0 0 25%;
       }
    }
 
 }
 
-
+/////////////////////////////////////////////////////////
 // specific settings for landscape orientation only
 @media only screen and (min-device-width : 320px) and (max-device-width : 1200px) and (orientation : landscape) {
    header {
-      // height: auto;
+      height: 121vh;
+
+      .navSidebar {
+         height: 121vh;
+      }
+
       .sidebarSocial,
       .hamburgerMenuSocial {
          display: none;
       }
+
       .menu {
          height: auto;
       }
+
       .mainTitle {
          padding-top: 6%;
+
          h1 {
             font-size: 17vw;
          }
+
          h2 {
             font-size: 1.8rem;
             padding-top: 3%;
+         }
+
+         .arrow {
+            bottom: 21%;
          }
       }
    }
