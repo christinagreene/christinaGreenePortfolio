@@ -1,7 +1,21 @@
 /////////////////////////////////////////////////////////
-@media (max-width: 900px) {
-   header {
+@media (max-width: 1050px) {
 
+   .projects {
+      .projectType {
+         font-size: 1.7rem;
+      }
+      p {
+         font-size: 1.7vw;
+      }
+   }
+}
+
+
+/////////////////////////////////////////////////////////
+@media (max-width: 900px) {
+
+   header {
       .mainTitle {
          padding-bottom: 70px;
 
@@ -20,18 +34,30 @@
    }
 
    .aboutContainer {
+      padding-bottom: 10%;
+
       .aboutDescription {
          .aboutTagline {
             width: 100%;
          }
       }
    }
+
+   .projects {
+      .projectType {
+         font-size: 1.6rem;
+      }
+   }
 }
 
 /////////////////////////////////////////////////////////
 @media (max-width: 790px) {
-   header {
 
+   h2 {
+      padding: 8% 0;
+   }
+
+   header {
       .mainTitle {
          padding-left: 12%;
          padding-bottom: 0;
@@ -42,21 +68,63 @@
       }
    }
 
-   .projectContainer {
-      flex-direction: column;
-      padding-bottom: 8%;
+   .projects {
+      p {
+         font-size: 2vw;
+      }
 
-      .projectOne,
-      .projectTwo,
-      .projectThree,
-      .projectFour {
-         width: 100%;
-         padding: 8% 0;
+      .projectsRight .projectMobile .projectBio,
+      .newProject .projectBio {
+         align-items: flex-start;
+      }
+
+      .projectsRight .projectDesktop .projectBio {
+         align-items: center;
+      }
+
+      .projectType {
+         font-size: 1.6rem;
+         padding-top: 45px;
+      }
+
+      .projectsContainer {
+         flex-flow: row wrap;
+
+         .projectsLeft,
+         .projectsCentre {
+            width: 45%;
+         }
+
+         .projectsRight {
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            .projectMobile {
+               width: 28%;
+            }
+
+            .projectDesktop {
+               width: 63%;
+               padding-top: 6%;
+            }
+         }
+      }
+
+      .newProject:last-of-type .projectImage {
+         overflow: scroll;
+      }
+
+      .newProject:last-of-type .projectBio {
+         overflow: unset;
       }
    }
 
-   .skillsContainer {
-      justify-content: center;
+   .skills {
+      .skillsContainer {
+         justify-content: center;
+      }
 
       .icon {
          width: 25%;
@@ -64,13 +132,14 @@
    }
 
    .blogContainer {
-      justify-content: center;
+      justify-content: space-between;
 
       .post {
-         width: 100%;
-         padding: 3% 0 6% 0;
+         width: 45%;
+         padding-bottom: 50px;
       }
    }
+
 
    .contactContainer {
       flex-direction: column;
@@ -87,16 +156,29 @@
 }
 
 /////////////////////////////////////////////////////////
+@media (max-width: 670px) {
+
+   .blogContainer {
+      .post {
+         width: 100%;
+         padding-bottom: 75px;
+      }
+   }
+}
+
+/////////////////////////////////////////////////////////
 @media (max-width: 550px) {
 
    h2 {
-      padding: 8% 0;
+      padding-top: 10%;
+   }
+
+   .sectionSeparator {
+      width: 50%;
    }
 
    header {
-
       .mainTitle {
-         
          h1 {
             font-size: 11rem;
          }
@@ -109,7 +191,6 @@
    }
 
    .about {
-
       h2 {
       padding-bottom: 4%;
       }
@@ -122,14 +203,83 @@
          }
       }
    }
+
+   .projects {
+      p {
+         font-size: 2rem;
+      }
+
+      .projectType {
+         font-size: 2.3rem;
+      }
+
+      .projectImage {
+         .projectBio p {
+            font-size: 3.8vw;
+            line-height: 1.6;
+         }
+      }
+
+      .projectDesktop .projectBio,
+      .newProject .projectBio {
+         align-items: center;
+      }
+
+      .projectsContainer {
+         flex-direction: column;
+
+         .project {
+            padding: 30px 0;
+         }
+
+         .projectsLeft,
+         .projectsCentre {
+            width: 100%;
+         }
+
+         .projectsCentre {
+            display: flex;
+            flex-direction: column-reverse;
+         }
+
+         .projectsRight {
+            flex-direction: column;
+
+            .projectMobile,
+            .projectDesktop {
+               width: 100%;
+            }
+
+            .projectMobile .projectBio {
+               align-items: center;
+            }
+         }
+      }
+
+      .newProjects {
+         flex-direction: column;
+
+         .newProject {
+            width: 100%;
+            padding: 25px 0;
+         }
+      }
+   }
+
+   .newProjectsContainer,
+   .newSkillsContainer {
+      padding-bottom: 40px;
+   }
+
+   .skills {
+      .icon {
+         width: 33%;
+      }
+   }
 }
 
 /////////////////////////////////////////////////////////
 @media (max-width: 480px) {
-   // header,
-   // header .navSidebar {
-   //    height: 95vh;
-   // }
 
    header {
 
@@ -152,11 +302,7 @@
 
    .menuExtended {
       height: auto;
-      padding-bottom: 215px; // might need to change based on phone types
-   }
-
-   .hamburgerMenuSocial {
-      display: none;
+      padding-bottom: 215px;
    }
 
    .skillsContainer {
@@ -172,7 +318,7 @@
 // Smallest screen sizes (smallest = 320px)
 @media (max-width: 375px) {
    h2 {
-      font-size: 10vw;
+      font-size: 9vw;
    }
    
    header {
@@ -180,22 +326,30 @@
       .mainTitle {
          padding: 0 0 0 25%;
       }
+
+      .arrow {
+         left: 58%;
+      }
+   }
+
+   .skills {
+      .icon {
+         width: 48%;
+      }
+
+      .newSkills {
+         justify-content: space-evenly;
+      }
    }
 
 }
 
 /////////////////////////////////////////////////////////
-// specific settings for landscape orientation only
-@media only screen and (min-device-width : 320px) and (max-device-width : 1200px) and (orientation : landscape) {
+// specific settings for landscape orientation on phones
+@media only screen and (min-device-width : 320px) and (max-device-width : 900px) and (orientation : landscape) {
    header {
-      height: 121vh;
 
-      .navSidebar {
-         height: 121vh;
-      }
-
-      .sidebarSocial,
-      .hamburgerMenuSocial {
+      .sidebarSocial {
          display: none;
       }
 
@@ -207,7 +361,7 @@
          padding-top: 6%;
 
          h1 {
-            font-size: 17vw;
+            font-size: 15vw;
          }
 
          h2 {
@@ -216,8 +370,19 @@
          }
 
          .arrow {
-            bottom: 21%;
+            display: none;
          }
       }
    }
+}
+
+///////////////////////////////////////////////////////
+// specific settings for portrait orientation on tablets
+
+@media only screen and (min-device-width : 600px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+   .hamburgerMenuSocial {
+      display: none;
+   }
+
 }

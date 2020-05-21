@@ -676,7 +676,7 @@ header .arrow span:hover {
           writing-mode: vertical-rl;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   font-style: italic;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -709,9 +709,6 @@ header .arrow span:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   opacity: 0;
   background: rgba(249, 245, 245, 0.97);
   position: absolute;
@@ -738,6 +735,13 @@ header .arrow span:hover {
   opacity: 1;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+.projects .projectMobile .projectBio,
+.projects .newProject .projectBio {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects .projectLinks {
@@ -971,6 +975,15 @@ header .arrow span:hover {
   padding: 15px 0;
 }
 
+@media (max-width: 1050px) {
+  .projects .projectType {
+    font-size: 1.7rem;
+  }
+  .projects p {
+    font-size: 1.7vw;
+  }
+}
+
 @media (max-width: 900px) {
   header .mainTitle {
     padding-bottom: 70px;
@@ -984,12 +997,21 @@ header .arrow span:hover {
   header .menu {
     height: auto;
   }
+  .aboutContainer {
+    padding-bottom: 10%;
+  }
   .aboutContainer .aboutDescription .aboutTagline {
     width: 100%;
+  }
+  .projects .projectType {
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 790px) {
+  h2 {
+    padding: 8% 0;
+  }
   header .mainTitle {
     padding-left: 12%;
     padding-bottom: 0;
@@ -997,36 +1019,76 @@ header .arrow span:hover {
   header .mainTitle h1 {
     margin: 0;
   }
-  .projectContainer {
-    -webkit-box-orient: vertical;
+  .projects p {
+    font-size: 2vw;
+  }
+  .projects .projectsRight .projectMobile .projectBio,
+  .projects .newProject .projectBio {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .projects .projectsRight .projectDesktop .projectBio {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects .projectType {
+    font-size: 1.6rem;
+    padding-top: 45px;
+  }
+  .projects .projectsContainer {
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-bottom: 8%;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
-  .projectContainer .projectOne,
-  .projectContainer .projectTwo,
-  .projectContainer .projectThree,
-  .projectContainer .projectFour {
+  .projects .projectsContainer .projectsLeft,
+  .projects .projectsContainer .projectsCentre {
+    width: 45%;
+  }
+  .projects .projectsContainer .projectsRight {
     width: 100%;
-    padding: 8% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .skillsContainer {
+  .projects .projectsContainer .projectsRight .projectMobile {
+    width: 28%;
+  }
+  .projects .projectsContainer .projectsRight .projectDesktop {
+    width: 63%;
+    padding-top: 6%;
+  }
+  .projects .newProject:last-of-type .projectImage {
+    overflow: scroll;
+  }
+  .projects .newProject:last-of-type .projectBio {
+    overflow: unset;
+  }
+  .skills .skillsContainer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .skillsContainer .icon {
+  .skills .icon {
     width: 25%;
   }
   .blogContainer {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .blogContainer .post {
-    width: 100%;
-    padding: 3% 0 6% 0;
+    width: 45%;
+    padding-bottom: 50px;
   }
   .contactContainer {
     -webkit-box-orient: vertical;
@@ -1043,9 +1105,19 @@ header .arrow span:hover {
   }
 }
 
+@media (max-width: 670px) {
+  .blogContainer .post {
+    width: 100%;
+    padding-bottom: 75px;
+  }
+}
+
 @media (max-width: 550px) {
   h2 {
-    padding: 8% 0;
+    padding-top: 10%;
+  }
+  .sectionSeparator {
+    width: 50%;
   }
   header .mainTitle h1 {
     font-size: 11rem;
@@ -1062,6 +1134,76 @@ header .arrow span:hover {
   }
   .about .aboutContainer .headshotContainer {
     width: 40%;
+  }
+  .projects p {
+    font-size: 2rem;
+  }
+  .projects .projectType {
+    font-size: 2.3rem;
+  }
+  .projects .projectImage .projectBio p {
+    font-size: 3.8vw;
+    line-height: 1.6;
+  }
+  .projects .projectDesktop .projectBio,
+  .projects .newProject .projectBio {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects .projectsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .projectsContainer .project {
+    padding: 30px 0;
+  }
+  .projects .projectsContainer .projectsLeft,
+  .projects .projectsContainer .projectsCentre {
+    width: 100%;
+  }
+  .projects .projectsContainer .projectsCentre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .projects .projectsContainer .projectsRight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .projectsContainer .projectsRight .projectMobile,
+  .projects .projectsContainer .projectsRight .projectDesktop {
+    width: 100%;
+  }
+  .projects .projectsContainer .projectsRight .projectMobile .projectBio {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects .newProjects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .newProjects .newProject {
+    width: 100%;
+    padding: 25px 0;
+  }
+  .newProjectsContainer,
+  .newSkillsContainer {
+    padding-bottom: 40px;
+  }
+  .skills .icon {
+    width: 33%;
   }
 }
 
@@ -1082,9 +1224,6 @@ header .arrow span:hover {
     height: auto;
     padding-bottom: 215px;
   }
-  .hamburgerMenuSocial {
-    display: none;
-  }
   .skillsContainer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1097,22 +1236,26 @@ header .arrow span:hover {
 
 @media (max-width: 375px) {
   h2 {
-    font-size: 10vw;
+    font-size: 9vw;
   }
   header .mainTitle {
     padding: 0 0 0 25%;
   }
+  header .arrow {
+    left: 58%;
+  }
+  .skills .icon {
+    width: 48%;
+  }
+  .skills .newSkills {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 1200px) and (orientation: landscape) {
-  header {
-    height: 121vh;
-  }
-  header .navSidebar {
-    height: 121vh;
-  }
-  header .sidebarSocial,
-  header .hamburgerMenuSocial {
+@media only screen and (min-device-width: 320px) and (max-device-width: 900px) and (orientation: landscape) {
+  header .sidebarSocial {
     display: none;
   }
   header .menu {
@@ -1122,14 +1265,20 @@ header .arrow span:hover {
     padding-top: 6%;
   }
   header .mainTitle h1 {
-    font-size: 17vw;
+    font-size: 15vw;
   }
   header .mainTitle h2 {
     font-size: 1.8rem;
     padding-top: 3%;
   }
   header .mainTitle .arrow {
-    bottom: 21%;
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .hamburgerMenuSocial {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

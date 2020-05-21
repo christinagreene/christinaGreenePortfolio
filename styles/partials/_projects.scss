@@ -31,7 +31,7 @@
    .projectType {
       writing-mode: vertical-rl;
       transform: rotate(180deg);
-      font-size: 2.3rem;
+      font-size: 2.1rem;
       font-style: italic;
       font-weight: 700;
       letter-spacing: 0.5px;
@@ -61,7 +61,6 @@
 
       .projectBio {
          display: flex;
-         align-items: center;
          opacity: 0;
          background: rgba(249, 245, 245, 0.97);
          position: absolute;
@@ -88,6 +87,11 @@
          transition: all .3s ease-in-out;
       }
    }
+
+   .projectMobile .projectBio,
+   .newProject .projectBio {
+         align-items: center;
+      }
    
    .projectLinks {
       text-align: right;
