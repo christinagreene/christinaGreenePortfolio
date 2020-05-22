@@ -1224,6 +1224,9 @@ header .arrow span:hover {
     height: auto;
     padding-bottom: 215px;
   }
+  .aboutDescription p {
+    text-align: left;
+  }
   .skillsContainer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
